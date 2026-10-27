@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Generated from store/privacy-policy.template.html + release.properties (./gradlew generateStoreTexts). Edit the template, not this file. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Hush: Minimalist Launcher</title>
+<style>
+:root{color-scheme:light dark;--fg:#111;--bg:#fff;--muted:#555;--line:#ddd;--link:#0b57d0}
+@media (prefers-color-scheme:dark){:root{--fg:#eee;--bg:#000;--muted:#aaa;--line:#333;--link:#8ab4f8}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px}h1{font-size:1.7rem;line-height:1.25;margin:0 0 16px}
+h2{font-size:1.2rem;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--line)}h3{font-size:1.05rem;margin:24px 0 6px}
+p,li{color:var(--fg)}.meta{color:var(--muted)}a{color:var(--link)}code{font:0.9em ui-monospace,Menlo,Consolas,monospace;word-break:break-word}
+ul{padding-left:1.2em}li{margin:4px 0}.table{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:12px 0;font-size:0.93rem}
+th,td{text-align:left;vertical-align:top;padding:8px;border-bottom:1px solid var(--line)}th{font-weight:600}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy policy: Hush: Minimalist Launcher</h1>
+<p class="meta"><strong>App:</strong> Hush: Minimalist Launcher (<code>com.rajaryan.minimalist.launcher</code>), Android<br><strong>Developer:</strong> Raj Aryan<br><strong>Contact:</strong> hush.launcher.app@gmail.com<br><strong>Effective date:</strong> 2026-10-27</p>
+<h2>The short version</h2>
+<ul><li>Hush has <strong>no account, no ads, no analytics and no tracking</strong>. It contains no advertising, analytics or crash-reporting SDKs.</li><li>Everything Hush stores stays <strong>on your phone</strong>. We (the developer) never receive it, and nothing is sold or shared.</li><li>The <strong>only network request</strong> Hush makes is the optional <strong>weather forecast</strong> from MET Norway, with your weather place rounded to about 1 km.</li><li>A <strong>crash report</strong> reaches us only if you tap "Send crash report" and then send the e-mail yourself.</li></ul>
+<h2>What stays on your phone</h2>
+<p>Hush keeps the following in its private app storage on your device. We have no copy of it.</p>
+<div class="table"><table><thead><tr><th>Data</th><th>Why</th></tr></thead><tbody>
+<tr><td>Settings (layout, theme, fonts, clock, gestures, weather on/off, weather city and its rounded coordinates, units, Calm options including hidden quotes and the music players you chose)</td><td>To remember how you set up Hush</td></tr>
+<tr><td>App customisations: home apps, favourites, renamed and hidden apps, apps marked as distracting, daily limits</td><td>Your home screen and drawer</td></tr>
+<tr><td>A list of your launchable apps (names and package names), read through Android's launcher API</td><td>To show your apps, including work-profile and cloned apps. The last list is saved so a paused work profile still shows after a restart</td></tr>
+<tr><td>How often you open apps from Hush</td><td>To rank search results</td></tr>
+<tr><td>Screen time, only if you turn on <strong>Usage Access</strong>: which apps were on screen and for how long, read from Android; daily totals are saved</td><td>To show today's screen time, minutes per app and a 7-day view. Only shown to you, on your phone</td></tr>
+<tr><td>Mindful pause history (recent opens of apps you marked as distracting)</td><td>Longer pauses on repeat opens, today's opens on the pause screen</td></tr>
+<tr><td>Focus sessions and their history</td><td>To run a session (also after a restart) and show your history</td></tr>
+<tr><td>Mindful minutes: when you did a breathing session and for how long (last 90 days)</td><td>To show "Mindful today · this week" on the Focus screen. Not backed up</td></tr>
+<tr><td>The photo you pick for the photo card (Cards layout), as a downscaled copy</td><td>To show it on your home screen. It stays on your phone, is never uploaded or backed up, and "Remove photo" deletes it</td></tr>
+<tr><td>The last weather forecast, and your rounded approximate location if you use "Use my location"</td><td>To show the weather without asking again too often</td></tr>
+<tr><td>Crash logs (the last 10, each at most 64 KB): app version, phone model, Android version, error details</td><td>So you can send them to us if you want to</td></tr>
+</tbody></table></div>
+<h2>The only network request: weather (optional, off by default)</h2>
+<p>When you turn on weather, Hush asks the <strong>Norwegian Meteorological Institute (MET Norway)</strong> for a forecast (api.met.no, Locationforecast 2.0). The request contains:</p>
+<ul><li>the latitude and longitude of your weather place, <strong>rounded to 2 decimals</strong> (about 1 km), and</li><li>Hush's identification as MET requires: <code>Hush-Launcher/&lt;version&gt; (+hush.launcher.app@gmail.com)</code>. This is the <strong>developer's</strong> contact address, not yours.</li></ul>
+<p>Like any internet request, it also reveals your IP address to MET Norway. MET Norway says it stores the IP address and the coordinates of requests in its access logs in Norway. See its <a href="https://api.met.no/doc/TermsOfService">terms of service</a> and <a href="https://www.met.no/en/About-us/privacy">privacy policy</a>. MET Norway receives nothing else from Hush: no name, no account, no device ID, no app list.</p>
+<p>Hush asks for the forecast only when the home screen opens and the saved one has expired (at most every 30 minutes), never in the background. Turning weather off deletes the saved forecast and your device location; the city you picked stays in your settings until you change it or clear the app's storage.</p>
+<h3>Location permission (optional)</h3>
+<p>By default you pick a <strong>city</strong> for the weather. Only if you turn on "Use my location" does Hush ask for <strong>approximate location</strong> (<code>ACCESS_COARSE_LOCATION</code>; never precise location, never background location). Hush reads it only when the home screen opens, rounds it to 2 decimals, keeps it on your phone and uses it only for the weather request above. You can say no and keep using a city.</p>
+<h3>City search</h3>
+<p>When you search for a city in Settings → Weather, Hush uses your phone's built-in <strong>Android Geocoder</strong>. The text you type goes to the geocoding service your phone's maker set up (on most phones this is Google, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>), not to us. This only happens when you search. You can also type latitude and longitude instead, which sends nothing.</p>
+<h2>Music controls and Notification Access (optional, off by default)</h2>
+<p>If you turn on <strong>Music controls</strong>, Hush asks you to allow <strong>Notification Access</strong> for "Hush music controls". Android only lets apps see what is playing (title, artist, play/pause state) and control it through this access. Hush uses it <strong>only</strong> to show the current song and the previous / play-pause / next buttons on your home screen. It <strong>does not read, store, log or send the content of your notifications</strong>: the part of Hush that Android connects to does nothing when a notification arrives. The song title and artist are shown on screen and are not saved; Hush only remembers on your phone which apps played media, so you can choose them in Settings → Music players. You can turn Notification Access off at any time in Android settings.</p>
+<h2>Crash reports (only if you send them)</h2>
+<p>If Hush crashes, it saves a crash log on your phone. Nothing is sent automatically. If you tap <strong>"Send crash report"</strong> (in Settings, or "Share crash report" in safe mode), Hush opens your e-mail app with a pre-filled message to hush.launcher.app@gmail.com. You see the full text and decide whether to send it. It contains the app version, phone maker and model, Android version and the error details; names of other apps, e-mail addresses and links are removed from the logs first.</p>
+<p>If you send it, we receive the e-mail, including your e-mail address, like any e-mail you send us. We use it only to fix the problem and answer you, and delete it when it is no longer needed. You can ask us to delete it at any time. "Clear crash logs" in Settings deletes the logs from your phone.</p>
+<h2>Android backup</h2>
+<p>Android can back up app data to your own Google account (if backup is on in your phone's settings) and copy it to a new phone. Hush allows this <strong>only for your settings and app customisations</strong> (the first two rows of the table above, which include your weather city and the package names of apps you put on home, renamed, hid or marked). On Android 12 and newer, Hush's data goes into your Google account backup <strong>only when that backup is end-to-end encrypted</strong> (your phone has a screen lock PIN, pattern or password); copying it straight to a new phone is always allowed. <strong>Not backed up:</strong> screen time and usage data, pause and focus history, mindful minutes, the list of media apps, app-open counts, the app list, crash logs, the weather forecast and your device location. This backup is handled by Google under your Google account; we cannot see it. You can turn backups off in your phone's settings.</p>
+<p>"Export settings" in Hush writes a backup file only where you choose. It contains your settings, home apps, names and gestures, and no usage data.</p>
+<h2>Permissions</h2>
+<div class="table"><table><thead><tr><th>Permission</th><th>What for</th><th>Asked</th></tr></thead><tbody>
+<tr><td>Usage Access</td><td>Screen time, minutes per app</td><td>Optional, you turn it on in Android settings</td></tr>
+<tr><td>Notifications</td><td>Focus session countdown</td><td>Optional, at your first focus session (Android 13+)</td></tr>
+<tr><td>Do Not Disturb access</td><td>The "Hush focus" rule during focus sessions</td><td>Optional</td></tr>
+<tr><td>Notification Access</td><td>Music controls on home (what is playing, play/pause); notification content is never read</td><td>Optional, you turn it on in Android settings</td></tr>
+<tr><td>Approximate location</td><td>"Use my location" for weather</td><td>Optional</td></tr>
+<tr><td>Internet</td><td>Weather from MET Norway</td><td>Granted at install</td></tr>
+<tr><td>Run at startup</td><td>Restores a running focus session after a restart</td><td>Granted at install</td></tr>
+<tr><td>Expand status bar, request uninstall, hidden profiles</td><td>Swipe down for notifications, "Uninstall" in the app menu, showing Android 15 Private Space apps</td><td>Granted at install</td></tr>
+</tbody></table></div>
+<p>Hush does <strong>not</strong> use Accessibility services, screen overlays, device admin, contacts, calendar, camera, microphone, precise or background location.</p>
+<h2>Security and retention</h2>
+<ul><li>Everything is kept in Hush's private app storage, which other apps cannot read.</li><li>The weather request uses an encrypted HTTPS connection.</li><li>Data on your phone stays until you delete it or uninstall Hush. Focus history keeps the last 90 days, customisations of uninstalled apps are removed after 7 days, and only the 10 newest crash logs are kept.</li><li>Crash-report e-mails you send us are deleted when the problem is solved and no longer needed.</li></ul>
+<h2>What we never do</h2>
+<p>No selling of data, no sharing with third parties, no advertising, no profiling, no analytics, no account.</p>
+<h2>Children</h2>
+<p>Hush is not directed at children under 13 and does not knowingly collect personal information from anyone. Because Hush sends us nothing on its own, the only way information about a child could reach us is an e-mail someone sends us; contact us and we will delete it.</p>
+<h2>Your choices and deleting your data</h2>
+<ul><li>Turn off weather, Usage Access, location, notifications or Do Not Disturb access at any time (in Hush or in Android settings).</li><li>Settings → "Clear crash logs" deletes saved crash logs.</li><li>Android Settings → Apps → Hush → Storage → <strong>Clear storage</strong> deletes everything Hush has stored.</li><li><strong>Uninstalling Hush</strong> deletes all its data from your phone.</li><li>Your Google account backup of Hush's settings can be deleted in your Google account's backup settings.</li><li>To delete an e-mail you sent us, write to hush.launcher.app@gmail.com.</li></ul>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted at this address with a new effective date. If a change affects what data leaves your phone, the app update's "What's new" notes will say so.</p>
+<h2>Contact</h2>
+<p>Raj Aryan, hush.launcher.app@gmail.com</p>
+</main>
+</body>
+</html>
